@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSActivityViewController" customModule="Gigs" customModuleProvider="target">
+            <connections>
+                <outlet property="myConstraintTblViewTop" destination="Qnn-kH-y4J" id="kAM-br-nnp"/>
+                <outlet property="myLabelWalletBalnc" destination="eaN-bi-RlO" id="wEl-UV-C6g"/>
+                <outlet property="mySegmentedControl" destination="40R-YU-KLO" id="r6O-ms-lwP"/>
+                <outlet property="myTableView" destination="Q0O-CL-mcp" id="ywf-72-E2G"/>
+                <outlet property="myViewAvailableFunds" destination="rG5-I2-Zx2" id="2Ji-Ol-vMa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40R-YU-KLO" customClass="MXSegmentedControl" customModule="MXSegmentedControl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yvi-WO-DvK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorRight">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorLeft">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="segmentIndexChanged:" destination="-1" eventType="valueChanged" id="oVO-j1-3YE"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rG5-I2-Zx2">
+                    <rect key="frame" x="0.0" y="60" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Funds:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9j-Fe-MSx">
+                            <rect key="frame" x="10" y="13.5" width="150" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="scs-GQ-k2z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.47450980390000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-bi-RlO">
+                            <rect key="frame" x="165" y="13.5" width="50" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Pqt-xJ-woy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.47450980390000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DIt-3i-mk7"/>
+                        <constraint firstItem="O9j-Fe-MSx" firstAttribute="leading" secondItem="rG5-I2-Zx2" secondAttribute="leading" constant="10" id="UeQ-ip-RDg"/>
+                        <constraint firstItem="eaN-bi-RlO" firstAttribute="leading" secondItem="O9j-Fe-MSx" secondAttribute="trailing" constant="5" id="hhK-2M-td4"/>
+                        <constraint firstItem="O9j-Fe-MSx" firstAttribute="centerY" secondItem="rG5-I2-Zx2" secondAttribute="centerY" id="iQY-vz-VCS"/>
+                        <constraint firstItem="eaN-bi-RlO" firstAttribute="centerY" secondItem="O9j-Fe-MSx" secondAttribute="centerY" id="wK0-R4-2ZL"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q0O-CL-mcp">
+                    <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PMm-Pg-YnO"/>
+                        <outlet property="delegate" destination="-1" id="H7G-X7-qTh"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q0O-CL-mcp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6EP-P9-5Mg"/>
+                <constraint firstItem="Q0O-CL-mcp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B5A-EO-J6B"/>
+                <constraint firstItem="Q0O-CL-mcp" firstAttribute="top" secondItem="40R-YU-KLO" secondAttribute="bottom" constant="60" id="Qnn-kH-y4J"/>
+                <constraint firstItem="40R-YU-KLO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UJG-uT-3PC"/>
+                <constraint firstItem="rG5-I2-Zx2" firstAttribute="leading" secondItem="40R-YU-KLO" secondAttribute="leading" id="bDP-TY-YwB"/>
+                <constraint firstItem="Q0O-CL-mcp" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="nZi-Se-Wcs"/>
+                <constraint firstItem="rG5-I2-Zx2" firstAttribute="trailing" secondItem="40R-YU-KLO" secondAttribute="trailing" id="s2i-fX-pPe"/>
+                <constraint firstItem="40R-YU-KLO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="thw-zO-MIC"/>
+                <constraint firstItem="rG5-I2-Zx2" firstAttribute="top" secondItem="40R-YU-KLO" secondAttribute="bottom" constant="10" id="vRQ-zW-gtu"/>
+                <constraint firstItem="40R-YU-KLO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xAe-Ss-WUx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="32.5" y="80.5"/>
+        </view>
+    </objects>
+</document>

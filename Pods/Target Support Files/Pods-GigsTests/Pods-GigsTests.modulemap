@@ -1,0 +1,6 @@
+framework module Pods_GigsTests {
+  umbrella header "Pods-GigsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

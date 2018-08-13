@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSViewAllGigsViewController" customModule="Gigs" customModuleProvider="target">
+            <connections>
+                <outlet property="myCollectionView" destination="FJL-8u-DmP" id="zwB-ac-7ky"/>
+                <outlet property="myContainerView" destination="4gC-L3-DuZ" id="mFT-yg-411"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="hA9-54-Erx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gC-L3-DuZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FJL-8u-DmP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Iqa-vD-GPj">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="0u2-fN-yf4"/>
+                                <outlet property="delegate" destination="-1" id="E0i-Mr-ZAG"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FJL-8u-DmP" firstAttribute="top" secondItem="4gC-L3-DuZ" secondAttribute="top" id="1w8-A2-srj"/>
+                        <constraint firstAttribute="bottom" secondItem="FJL-8u-DmP" secondAttribute="bottom" id="7Ik-KH-fV5"/>
+                        <constraint firstAttribute="trailing" secondItem="FJL-8u-DmP" secondAttribute="trailing" id="Js9-kM-nia"/>
+                        <constraint firstItem="FJL-8u-DmP" firstAttribute="leading" secondItem="4gC-L3-DuZ" secondAttribute="leading" id="fwj-fD-OIH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4gC-L3-DuZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lde-YU-Np0"/>
+                <constraint firstAttribute="trailing" secondItem="4gC-L3-DuZ" secondAttribute="trailing" id="ZIO-Kb-Ku7"/>
+                <constraint firstItem="4gC-L3-DuZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bbR-kl-Nim"/>
+                <constraint firstAttribute="bottom" secondItem="4gC-L3-DuZ" secondAttribute="bottom" id="cig-z4-Qda"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

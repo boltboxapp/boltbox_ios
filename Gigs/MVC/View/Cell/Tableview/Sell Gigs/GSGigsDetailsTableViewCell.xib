@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="487" id="KGk-i7-Jjw" customClass="GSGigsDetailsTableViewCell" customModule="Gigs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="639" height="487"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="639" height="486.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title for your Gig" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymE-mX-tu5">
+                        <rect key="frame" x="10" y="10" width="619" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.47450980390000003" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="fnt-7J-1lb"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-N7-AGu">
+                        <rect key="frame" x="10" y="45" width="619" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VjF-yz-1Ed"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="When will you deliver the Gig " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-q7-ZYU">
+                        <rect key="frame" x="10" y="56" width="619" height="30"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.47450980390000003" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYu-4l-NAt">
+                        <rect key="frame" x="10" y="91" width="619" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cost of the Gig" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWa-hK-O5B">
+                        <rect key="frame" x="10" y="102" width="619" height="30"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.47450980390000003" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixc-xL-6TY">
+                        <rect key="frame" x="10" y="137" width="619" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VFX-pu-Idp">
+                        <rect key="frame" x="10" y="147" width="619" height="120"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.58039215690000001" green="0.47450980390000003" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="LJd-fH-PsA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tol-0Q-nhh">
+                        <rect key="frame" x="10" y="272" width="619" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLF-ua-tAQ">
+                        <rect key="frame" x="0.0" y="274" width="639" height="211.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ixc-xL-6TY" firstAttribute="top" secondItem="fWa-hK-O5B" secondAttribute="bottom" constant="5" id="0cw-xg-aWl"/>
+                    <constraint firstItem="fWa-hK-O5B" firstAttribute="height" secondItem="ymE-mX-tu5" secondAttribute="height" id="2FC-Fs-gry"/>
+                    <constraint firstAttribute="trailing" secondItem="ymE-mX-tu5" secondAttribute="trailing" constant="10" id="2Wq-K3-E0u"/>
+                    <constraint firstItem="ixc-xL-6TY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2ed-dJ-68c"/>
+                    <constraint firstItem="fWa-hK-O5B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3K0-Ok-f8h"/>
+                    <constraint firstItem="Quf-q7-ZYU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3Qb-AA-Of7"/>
+                    <constraint firstAttribute="trailing" secondItem="fg2-N7-AGu" secondAttribute="trailing" constant="10" id="3wN-Tg-ywh"/>
+                    <constraint firstAttribute="trailing" secondItem="gLF-ua-tAQ" secondAttribute="trailing" id="7Dv-TP-uoU"/>
+                    <constraint firstItem="ymE-mX-tu5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7Gm-qh-BEm"/>
+                    <constraint firstItem="fg2-N7-AGu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8E4-cm-uxt"/>
+                    <constraint firstAttribute="trailing" secondItem="ixc-xL-6TY" secondAttribute="trailing" constant="10" id="B1w-pa-5T9"/>
+                    <constraint firstAttribute="trailing" secondItem="fWa-hK-O5B" secondAttribute="trailing" constant="10" id="By6-L8-Zsg"/>
+                    <constraint firstItem="Quf-q7-ZYU" firstAttribute="height" secondItem="ymE-mX-tu5" secondAttribute="height" id="D92-Jk-hR2"/>
+                    <constraint firstItem="tol-0Q-nhh" firstAttribute="height" secondItem="fg2-N7-AGu" secondAttribute="height" id="E39-wM-Itj"/>
+                    <constraint firstItem="YYu-4l-NAt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EC8-5k-MHs"/>
+                    <constraint firstItem="VFX-pu-Idp" firstAttribute="top" secondItem="ixc-xL-6TY" secondAttribute="top" constant="10" id="IjT-pl-Yab"/>
+                    <constraint firstItem="ymE-mX-tu5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MBU-Dj-nGn"/>
+                    <constraint firstItem="tol-0Q-nhh" firstAttribute="top" secondItem="VFX-pu-Idp" secondAttribute="bottom" constant="5" id="MF2-kO-qI8"/>
+                    <constraint firstItem="YYu-4l-NAt" firstAttribute="height" secondItem="fg2-N7-AGu" secondAttribute="height" id="NwO-Y9-M02"/>
+                    <constraint firstAttribute="trailing" secondItem="VFX-pu-Idp" secondAttribute="trailing" constant="10" id="Oki-WN-cKz"/>
+                    <constraint firstItem="gLF-ua-tAQ" firstAttribute="top" secondItem="tol-0Q-nhh" secondAttribute="bottom" constant="1" id="Q7l-4M-t3G"/>
+                    <constraint firstItem="gLF-ua-tAQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bgY-T5-8ea"/>
+                    <constraint firstAttribute="trailing" secondItem="tol-0Q-nhh" secondAttribute="trailing" constant="10" id="cQR-kw-PBL"/>
+                    <constraint firstItem="Quf-q7-ZYU" firstAttribute="top" secondItem="fg2-N7-AGu" secondAttribute="bottom" constant="10" id="cYD-lu-pJ7"/>
+                    <constraint firstItem="fg2-N7-AGu" firstAttribute="top" secondItem="ymE-mX-tu5" secondAttribute="bottom" constant="5" id="e1M-fZ-TI0"/>
+                    <constraint firstItem="VFX-pu-Idp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="g81-l6-uN4"/>
+                    <constraint firstItem="ixc-xL-6TY" firstAttribute="height" secondItem="fg2-N7-AGu" secondAttribute="height" id="hnL-5z-bta"/>
+                    <constraint firstItem="YYu-4l-NAt" firstAttribute="top" secondItem="Quf-q7-ZYU" secondAttribute="bottom" constant="5" id="jhu-ur-kqN"/>
+                    <constraint firstAttribute="trailing" secondItem="Quf-q7-ZYU" secondAttribute="trailing" constant="10" id="kxs-Ht-dBb"/>
+                    <constraint firstAttribute="bottom" secondItem="gLF-ua-tAQ" secondAttribute="bottom" constant="1" id="nAT-Ww-fPu"/>
+                    <constraint firstItem="tol-0Q-nhh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ppq-iq-O4a"/>
+                    <constraint firstItem="fWa-hK-O5B" firstAttribute="top" secondItem="YYu-4l-NAt" secondAttribute="bottom" constant="10" id="y33-X0-1k5"/>
+                    <constraint firstAttribute="trailing" secondItem="YYu-4l-NAt" secondAttribute="trailing" constant="10" id="yhg-Y3-QY1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gTxtFldCost" destination="fWa-hK-O5B" id="bFF-Xb-8yk"/>
+                <outlet property="gTxtFldDays" destination="Quf-q7-ZYU" id="xUp-ww-a0o"/>
+                <outlet property="gTxtFldTitle" destination="ymE-mX-tu5" id="dvZ-Mi-rNH"/>
+                <outlet property="gTxtViewGigDetails" destination="VFX-pu-Idp" id="feG-se-k5q"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="40.5"/>
+        </tableViewCell>
+    </objects>
+</document>

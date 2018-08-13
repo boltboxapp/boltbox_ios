@@ -1,0 +1,6 @@
+framework module Pods_Gigs {
+  umbrella header "Pods-Gigs-umbrella.h"
+
+  export *
+  module * { export * }
+}
